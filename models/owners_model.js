@@ -14,7 +14,6 @@ const OwnerSchema=mongoose.Schema({
         type:Array,
         default:[]
     },
-    isadmin:Boolean,
     orders:{
         type:Array,
         default:[]
@@ -23,4 +22,4 @@ const OwnerSchema=mongoose.Schema({
     picture:String,
 });
 
-module.exports=mongoose.model("user",UserSchema);
+module.exports=mongoose.model("owner",OwnerSchema);
